@@ -10,12 +10,12 @@ describe('workspace-project Login', () => {
 
   it('Should login when fill correctly', () => {
     const EC = protractor.ExpectedConditions;
-    const expectedUrl = 'http://localhost:4200/';
+    const expectedUrl = 'http://localhost:4200/login';
 
     page.navigateToLogin();
     page.setEmail();
     page.setPassword();
-    page.selectGroupOptionByValue('A');
+    page.selectGroupOptionByValue();
 
     page.logIn();
 
